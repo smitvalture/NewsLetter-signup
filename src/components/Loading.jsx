@@ -3,10 +3,10 @@ import React, { useState, useEffect } from 'react';
 const Loading = () => {
 
     return (
-        <div className="fixed z-[100] flex items-center justify-center w-full min-h-screen bg-black/75">
+        <div className="fixed z-[100] flex items-center justify-center w-full min-h-screen bg-white/40">
             <div className="flex flex-col items-center">
                 <svg
-                    className="animate-spin h-10 w-10 text-white mb-4"
+                    className="animate-spin h-10 w-10 text-[#292b42] mb-4"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
