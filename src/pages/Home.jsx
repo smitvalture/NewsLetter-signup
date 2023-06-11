@@ -71,7 +71,7 @@ const Home = () => {
               </div>
               <input className={`w-full h-14 border-2  border-gray-400 ${error ? "bg-red-100 text-red-500 border-red-500 focus:outline-red-500" : ""} rounded-lg px-4`} placeholder='email@emcompany.com' value={email} onChange={handleChange} type="email" name="email" id="email" />
 
-              <button type='submit' disabled={error} className={`w-full h-14 mt-5 ${error ? "bg-gray-400 text-black" : "text-white hover:shadow-2xl shadow-orange-500 bg-[#292b42] hover:bg-gradient-to-r from-[#eb6079] to-[#ec704d]"} font-semibold rounded-lg`}>Subscribe to monthly newsletter</button>
+              <button type='submit' disabled={error} className={`w-full h-14 mt-5 ${error ? "bg-gray-400 text-black cursor-not-allowed" : "text-white hover:shadow-2xl shadow-orange-500 bg-[#292b42] hover:bg-gradient-to-r from-[#eb6079] to-[#ec704d]"} font-semibold rounded-lg`}>Subscribe to monthly newsletter</button>
             </form>
 
           </div>
@@ -109,11 +109,11 @@ const Home = () => {
             <form onSubmit={handleSubmit} noValidate className='flex flex-col gap-2'>
               <div className='flex justify-between'>
                 <h2 className='font-bold'>Email address</h2>
-                <h2 className='font-semibold text-red-500'>{error}</h2>
+                <p className='font-semibold text-red-500'>{error}</p>
               </div>
-              <input className={`w-full h-14 border-2  border-gray-400 ${error ? "bg-red-100 text-red-500 border-red-500 focus:outline-red-500" : ""} rounded-lg px-4`} placeholder='email@emcompany.com' value={email} onChange={handleChange} type="email" name="email" id="email" />
+              <input className={`w-full h-14 border-2  border-gray-400 ${error ? "bg-red-100 text-red-500 border-red-500 focus:outline-red-500" : ""} rounded-lg px-4`} placeholder='email@emcompany.com' value={email} onChange={handleChange} type="email" name="email" id="@email" />
 
-              <button type='submit' disabled={error} className={`w-full h-14 mt-5 ${error ? "bg-gray-400 text-black" : "text-white hover:shadow-2xl shadow-orange-500 bg-[#292b42] hover:bg-gradient-to-r from-[#eb6079] to-[#ec704d]"} font-semibold rounded-lg`}>Subscribe to monthly newsletter</button>
+              <button type='submit' disabled={error} className={`w-full h-14 mt-5 ${error ? "bg-gray-400 text-black cursor-not-allowed" : "text-white hover:shadow-2xl shadow-orange-500 bg-[#292b42] hover:bg-gradient-to-r from-[#eb6079] to-[#ec704d]"} font-semibold rounded-lg`}>Subscribe to monthly newsletter</button>
             </form>
 
           </div>
