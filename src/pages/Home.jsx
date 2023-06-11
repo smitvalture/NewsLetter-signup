@@ -85,7 +85,7 @@ const Home = () => {
       {/* ***************Mobile View************** */}
       <section className='block md:hidden w-full h-screen'>
         {loading && <Loading />}
-        <div className='flex flex-col-reverse lg:flex-row justify-center items-center bg-white rounded-3xl'>
+        <div className='pb-6 flex flex-col-reverse lg:flex-row justify-center items-center bg-white rounded-3xl'>
           <div className='px-8 flex flex-col gap-7 mt-8'>
 
             <h1 className='font-bold text-5xl'>Stay updated!</h1>
